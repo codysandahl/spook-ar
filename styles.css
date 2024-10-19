@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+#spook-ar-splash {
+    background-color: #000000;
+}
+
+.splash-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: #000000;
+}
+
+.splash-image img {
+    max-width: 600px;
+    width: 100%;
+    height: auto;
+}
+
+.splash-text {
+    margin: 20px;
+    text-align: center;
+}
+
+.splash-text h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #D35400;
+}
+
+.splash-text p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.splash-button button {
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: #D35400;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.splash-button button:hover {
+    background-color: #E67E22;
+}
+
+#exit-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 10px 20px;
+    background-color: #D35400;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1000; /* Ensure the button appears on top */
+    transition: background-color 0.3s ease;
+}
+
+#exit-button:hover {
+    background-color: #E67E22;
+}
