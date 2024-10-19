@@ -3,6 +3,7 @@
 AFRAME.registerComponent('marker-video-controls', {
     schema: {
         video: {type: 'selector'},
+        autoplay: {type: 'boolean', default: false}
     },
     init: function() {
         console.log("[marker-video-controls] init => "+this.data.video);
@@ -15,7 +16,10 @@ AFRAME.registerComponent('marker-video-controls', {
             return;
         }
         console.log(video);
-        var autoplay = video.hasAttribute("autoplay");
+        // get the autoplay attribute
+        //var autoplay = video.hasAttribute("autoplay");
+        var autoplay = data.autoplay;
+        console.log("Autoplay: "+autoplay);
         // get the a-video child element
         var aVideo = el.querySelector("a-video");
         if (aVideo == null) {
@@ -30,8 +34,9 @@ AFRAME.registerComponent('marker-video-controls', {
             if (intersectedElement == null) {
                 return;
             }
-            //console.log(intersectedElement.outerHTML);
-            if (intersectedElement === aVideo || intersectedElement === el) {
+            //console.log(intersectedElement.outerHTML+" || Visible = "+el.getAttribute("visible"));
+            // check if this event is for this video AND the marker is visible
+            if ((intersectedElement === aVideo || intersectedElement === el) && el.getAttribute("visible") !== false) {
                 console.log("[marker-video-controls] video clicked");
                 if (video.paused) {
                     video.play();
@@ -45,6 +50,7 @@ AFRAME.registerComponent('marker-video-controls', {
         el.addEventListener("markerFound", function(event) {
             console.log("[marker-video-controls] marker found");
             if (autoplay) {
+                console.log("[marker-video-controls] autoplay");
                 video.play();
             }
         });

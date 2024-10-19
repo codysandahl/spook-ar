@@ -20,23 +20,23 @@
         <a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 4x4_BCH_13_5_5;'>
             <!-- load all the assets -->
             <a-assets>
-                <video id="dilophosaurus" crossOrigin="anonymous" type="video/mp4" autoplay loop="true" src="assets/dilophosaurus.mp4" playsinline webkit-playsinline controls></video>
-                <video id="trex" crossOrigin="anonymous" type="video/mp4" autoplay loop="true" src="assets/trex.mp4" playsinline webkit-playsinline controls></video>
-                <video id="mosasaurus" crossOrigin="anonymous" type="video/mp4" autoplay loop="true" src="assets/mosasaurus.mp4" playsinline webkit-playsinline controls></video>
+                <video id="dilophosaurus" crossOrigin="anonymous" type="video/mp4" loop="true" src="assets/dilophosaurus.mp4" playsinline webkit-playsinline controls></video>
+                <video id="trex" crossOrigin="anonymous" type="video/mp4" loop="true" src="assets/trex.mp4" playsinline webkit-playsinline controls></video>
+                <video id="mosasaurus" crossOrigin="anonymous" type="video/mp4" loop="true" src="assets/mosasaurus.mp4" playsinline webkit-playsinline controls></video>
             </a-assets>
 
             <!-- dilophosaurus = #7 -->
-            <a-marker type='barcode' value='7' marker-video-controls="video: #dilophosaurus" emitevents="true" cursor="rayOrigin: mouse">
+            <a-marker type='barcode' value='7' marker-video-controls="video: #dilophosaurus; autoplay: true;" emitevents="true" cursor="rayOrigin: mouse">
                 <a-video src="#dilophosaurus" width="4" height="2.25" position="0 0.5 0" rotation="-90 0 0"></a-video>
             </a-marker>
 
             <!-- t-rex = #6 -->
-            <a-marker type='barcode' value='6' marker-video-controls="video: #trex" emitevents="true" cursor="rayOrigin: mouse">
+            <a-marker type='barcode' value='6' marker-video-controls="video: #trex; autoplay: true;" emitevents="true" cursor="rayOrigin: mouse">
                 <a-video src="#trex" width="4" height="2.25" position="0 0.5 0" rotation="-90 0 0"></a-video>
             </a-marker>
 
             <!-- mosasaurus = #8 -->
-            <a-marker type='barcode' value='8' marker-video-controls="video: #mosasaurus" emitevents="true" cursor="rayOrigin: mouse">
+            <a-marker type='barcode' value='8' marker-video-controls="video: #mosasaurus; autoplay: true;" emitevents="true" cursor="rayOrigin: mouse">
                 <a-video src="#mosasaurus" width="4" height="2.25" position="0 0.5 0" rotation="-90 0 0"></a-video>
             </a-marker>
 
