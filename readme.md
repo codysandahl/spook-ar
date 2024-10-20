@@ -47,6 +47,8 @@ To find the correct pre-generated barcode, combine the barcode type with the val
 
 Print the correct barcodes for your app and place them as physical scanning targets.
 
+The barcodes used for this specific project are in the ```print``` folder.
+
 ## Reference and Notes
 
 |Reference Name|Notes|
