@@ -20,17 +20,32 @@ This app depends on [AR.js](https://ar-js-org.github.io/AR.js-Docs/).
 2. Load the asset in ```spook-ar.html``` inside of ```<a-assets>``` with the format below. **All of these attributes are required**. Change ```id="dilophosaurus"``` to another unique ID.
 
 ```html
-<video id="dilophosaurus" poster="assets/dilophosaurus.jpg" crossOrigin="anonymous" type="video/mp4" autoplay loop="true" src="assets/dilophosaurus.mp4" playsinline webkit-playsinline controls></video>
+<video id="dilophosaurus" crossOrigin="anonymous" type="video/mp4" loop="true" src="assets/dilophosaurus.mp4" playsinline webkit-playsinline controls></video>
 ```
 
 3. Choose an unused marker number and tell AR.js to look for it. Use the format below. Change ```#dilophosaurus``` to the ID you assigned to your asset above. Change ```value='7'``` to the barcode number you selected.
 
 ```html
 <!-- dilophosaurus = #7 -->
-<a-marker type='barcode' value='7' marker-video-controls="video: #dilophosaurus" emitevents="true" cursor="rayOrigin: mouse">
+<a-marker type='barcode' value='7' marker-video-controls="video: #dilophosaurus; autoplay:true" emitevents="true" cursor="rayOrigin: mouse">
     <a-video src="#dilophosaurus" width="4" height="2.25" position="0 0.5 0" rotation="-90 0 0"></a-video>
 </a-marker>
 ```
+
+## Barcodes
+
+AR.js supports a very specific set of barcodes or markers. These pre-generated barcodes can be found at https://github.com/nicolocarpignoli/artoolkit-barcode-markers-collection.
+
+There are different sets of barcodes. This app uses **4x4_BCH_13_5_5** barcodes by default. See References and Notes for other options. You must stick to **a single barcode type** within each page. You cannot, for example, mix 3x3 barcodes and 4x4 barcodes. Nor can you mix 4x4_BCH_13_9_3 barcodes with 4x4_BCH_13_5_5 barcodes.
+
+To find the correct pre-generated barcode, combine the barcode type with the value.
+
+**Example**
+- Barcode Type: 4x4_BCH_13_5_5
+- Value: 7
+- URL: https://github.com/nicolocarpignoli/artoolkit-barcode-markers-collection/blob/master/4x4_bch_13_5_5/7.png
+
+Print the correct barcodes for your app and place them as physical scanning targets.
 
 ## Reference and Notes
 
