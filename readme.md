@@ -4,6 +4,8 @@ SpookAR is an augmented reality web app that detects barcodes and plays a short 
 
 This app depends on [AR.js](https://ar-js-org.github.io/AR.js-Docs/).
 
+**This app is deployed at [Spook-AR](https://codysandahl.com/spook-ar/).**
+
 ## User Flow
 
 1. User starts at ```index.html``` with a splash screen
