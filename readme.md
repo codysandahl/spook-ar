@@ -13,6 +13,24 @@ This app depends on [AR.js](https://ar-js-org.github.io/AR.js-Docs/).
     - **Example**: barcode #7 will trigger a short video of a Dilophosaurus roaring
 5. User can click the ```Exit``` button to return to the splash screen on ```index.html```
 
+## Screenshots
+
+### Splash Screen
+
+<img src="assets/demo-splash.png" alt="Splash Screen" width="200">
+
+### Dilophosaurus
+
+| Physical Tag | Video Playing Live |
+|--------------|--------------------|
+| <img src="assets/demo-dilophosaurus.jpg" alt="Dilophosaurus" width="200"> | <img src="assets/demo-dilophosaurus-video.png" alt="Dilophosaurus Video" width="200"> |
+
+### T-Rex
+
+| Physical Tag | Video Playing Live |
+|--------------|--------------------|
+| <img src="assets/demo-trex.jpg" alt="T-Rex" width="200"> | <img src="assets/demo-trex-video.png" alt="T-Rex Video" width="200"> |
+
 ## Adding New Markers/Videos
 
 1. Upload a short video as an MP4 to the ```assets``` folder.
