@@ -67,7 +67,10 @@ To find the correct pre-generated barcode, combine the barcode type with the val
 
 Print the correct barcodes for your app and place them as physical scanning targets.
 
-The barcodes used for this specific project are in the ```print``` folder.
+The barcodes used for this specific project are in the ```print``` folder. Example:
+- Dr Strange Lawn Sign.svg - Inkscape file for 18"x12" lawn sign
+- Dr Strange Lawn Sign.png - Print-ready image for 18"x12" lawn sign
+
 
 ## Reference and Notes
 

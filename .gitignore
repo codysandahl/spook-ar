@@ -31,3 +31,6 @@ Thumbs.db
 
 # Ignore reference folder and all its contents
 reference/
+
+# Ignore files with "_autosave_" in the name in any folder
+*_autosave_*
