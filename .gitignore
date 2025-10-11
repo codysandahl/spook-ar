@@ -34,3 +34,6 @@ reference/
 
 # Ignore files with "_autosave_" in the name in any folder
 *_autosave_*
+
+# Ignore ZIP files
+*.zip

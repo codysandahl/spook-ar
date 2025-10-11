@@ -72,6 +72,10 @@ The barcodes used for this specific project are in the ```print``` folder. Examp
 - Dr Strange Lawn Sign.png - Print-ready image for 18"x12" lawn sign
 
 
+## Deployment
+
+This project runs on vanilla JS, HTML, and on-site resources. All you have to do is upload the files to a web host and you're good to go!
+
 ## Reference and Notes
 
 |Reference Name|Notes|
