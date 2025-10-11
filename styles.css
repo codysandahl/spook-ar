@@ -76,3 +76,22 @@ body, html {
 #exit-button:hover {
     background-color: #E67E22;
 }
+
+.splash-instructions {
+    margin: 20px;
+    text-align: left;
+    max-width: 500px;
+    color: #fff;
+}
+
+.splash-instructions ol {
+    list-style-type: decimal;
+    padding-left: 20px;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.splash-instructions ol li {
+    margin-bottom: 8px;
+    color: #fff;
+}
