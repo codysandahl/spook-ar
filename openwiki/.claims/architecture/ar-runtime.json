@@ -1,0 +1,182 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:75d9f9783fd038c73a2091dbe8da11a0d63fdd81653323d0f660bb40d385932f",
+  "claims": [
+    {
+      "id": "claim_f6115db7bf8e4b018057bebea6279cd6",
+      "statement": "The user journey is implemented as navigation between two static pages: `index.html` provides logo and Start links to `spook-ar.html`, and the scanner page's Exit link returns to `index.html`; no application state is passed between pages.",
+      "evidence": [
+        {
+          "resource": "repo://index.html#L9-L27",
+          "version": "repo-lines-v1:sha256:218652dcabfa33a26842982f9821ff4e4a590e0f401658801b8738e5cf4edecf:eyJzZWxlY3RlZExpbmVDb3VudCI6MTksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImU5Mzc1ZmM2MGY1ZmVmNGM3ZTY4NjI1NjJiNjA5OGUzNjY2OGI0NWFhNzQ4ZWMzZjc5NDYyYTkzMzVhYTU4YzYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjZhM2ZmYjU5NWM5N2IwYzA2NWIxZDg3ZWNkM2NhZTA5YjlhMzE4NzJkYTZmOTgyYjMyNGZlZjcxOTBhOTkyZTgiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjdhY2ZmMmYzOTdhMmU1Y2MwN2VmYmUxZjFlMWNlYmNkOGVkZDYyYTAzNTBkN2QyYzU3ZDU5YmMzNTNkY2NkNWYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImY3ODZmMzhjNjU0ZWI0YjlhNmZhYjNjZjk1NWFmYWQ3ODlhNGM1OTQ4NmNjNjFkNGU5YWI2M2VlZGRjOWU3MTQifQ"
+        },
+        {
+          "resource": "repo://spook-ar.html#L13-L17",
+          "version": "repo-lines-v1:sha256:c8c3f5d358b565ae0fae7059fee3ff68235e4b84d9782b0351885b5bb33e3ede:eyJzZWxlY3RlZExpbmVDb3VudCI6NSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiYTllMmU1MjUxODA0YWYxMjljMDAwNmFkYWU0NWU4NmNlNDFjZmJjNDIyNmJjNGYwMWU2MjczZjM2M2NkMDBhNyIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiYWYyMTVmZDAzY2ZjMmJlZWJmODA0YTE3YWM1ZTk0Nzk1MWY3Y2QyZGMwNTYwNTIyNDk5YzYwNmZkYmNkNzE4NSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiYmFmZGUxZTg2OGVjZWViNGIxZGUwNzE0ZjhlZDY3M2E4NGE0YmMxYjQ1YTU4OTcxNzJhNmYxZjkzMTZmMzU3MSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiYzdkMmZiZTQyYTI5MGQ5YTgyYmYxZDBmZjY5MjI5MjQ0MTA3ZjMyYTZjYTAwY2EyOWFmMTc1NmMyOGI5NDIwYyJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_6ce9da4208e046b38dd24554d4f8dafe",
+      "statement": "`index.html` is an instructional splash page that tells users to grant camera permission and scan the physical barcode decorations; `styles.css` owns its presentation and the positioned Exit-button styling, not AR behavior.",
+      "evidence": [
+        {
+          "resource": "repo://index.html#L9-L28",
+          "version": "repo-lines-v1:sha256:d0f56038626d48ff41761a8c72ff849127f6eaf68bca6f3348fe4dc3dbc14fe8:eyJzZWxlY3RlZExpbmVDb3VudCI6MjAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImU5Mzc1ZmM2MGY1ZmVmNGM3ZTY4NjI1NjJiNjA5OGUzNjY2OGI0NWFhNzQ4ZWMzZjc5NDYyYTkzMzVhYTU4YzYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImFmMjE1ZmQwM2NmYzJiZWViZjgwNGExN2FjNWU5NDc5NTFmN2NkMmRjMDU2MDUyMjQ5OWM2MDZmZGJjZDcxODUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjdhY2ZmMmYzOTdhMmU1Y2MwN2VmYmUxZjFlMWNlYmNkOGVkZDYyYTAzNTBkN2QyYzU3ZDU5YmMzNTNkY2NkNWYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImViNWU1YjNiMGM4MzA0YjE1ZDAzODE0MTljMjVlNzA5Yzc2Nzk3NGI4NjI2YmVkNzhlMzA1ZWJhMmI2MzJmZGUifQ"
+        },
+        {
+          "resource": "repo://styles.css#L12-L59",
+          "version": "repo-lines-v1:sha256:17d4274e5d306c783cc6d2971886aeff992184eb254557d2d23b4593367bb198:eyJzZWxlY3RlZExpbmVDb3VudCI6NDgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjRhYzVhMjY0MDA1NzU2Yzc2MDFiMTUzNmQwMmU5NDg3OTY1ZGJiZjg2NzA3N2RlNDNmZDI3NDM5ZDRkNTc1NDYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjY5NzE4MWZjZjdiYmJlNWM2YWYyZmEwYTM5MDM3YTc4MzdlYjZkMjdiODU2NTJhYWZjZTAwNjllNTZhMjBjNmEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImQzYmJhNjMyODBkYWI4ZTNjYmI3ODM4ZjVmODdiMjYwODY1MzY0NTg2OWVlOGJiMTQ4ZDRhNjQyNWNmMWUyODgiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjE4MmZhODIxMmUwMjk5NDNkYWUxNTA1Y2NkOTc3ZDg3NGUyOWZhODEwYmYzOGY1ZmM0YmM0ODYxY2Q2NzkxZjQifQ"
+        },
+        {
+          "resource": "repo://styles.css#L62-L78",
+          "version": "repo-lines-v1:sha256:cc98c0f799a25a9c53b4fabfbb9482e894a0a9dd4d3e5c011cd80c674d38fea4:eyJzZWxlY3RlZExpbmVDb3VudCI6MTcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjlkZGU2ODNmMGQ2OTgxY2YxMDgxYmM2Zjc3N2MxOWQxOTA4ZTFlNTdlMmRjNGYwMjJiMDc2NGUxNzI4Yjg1NzUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImFmODBjMWFkODYxNjk3N2Q1MDc1Yzk1ZTkyN2EyMWNhZmE1NzdiZGY4YjEyZWUxNzU0OTNiMTc0MjU1MDE1NzIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImU4YjQ5NGRmZDdhNzg3ZjkxNzMxNWI3N2Y0ZTczMTg0ZjI2NDliYzZhNTc0NmFiOTcxOTI1YzA4MzljNGY5ZjcifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_beba20cfd12b4e119c9415baa0a9c7aa",
+      "statement": "The scanner page loads A-Frame 1.6.0, AR.js, and the custom controls script, then declares an embedded webcam scene configured for mono-and-matrix detection and `4x4_BCH_13_5_5` barcode markers with a camera entity for multiple markers.",
+      "evidence": [
+        {
+          "resource": "repo://spook-ar.html#L67-L69",
+          "version": "repo-lines-v1:sha256:d7cb36f00c68ec5e567db377d8f6fd015616a235e768b21a7c7345cccd2024d7:eyJzZWxlY3RlZExpbmVDb3VudCI6MywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiYjg2Yjk3MWE1NDhjZTExZWFhODk2NTAwYTc2NzlkNDUxNmM3YzUyZWJiNTg0OTg5NDA2YjNjMzU1N2VmNWYyMyIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNjdiNzU2YjI2Nzc2ZmRjMDJiMWU3YWU1MzlhYzRhNDM4YjQ5NmM0MTY0NDM2YTFmNGFmNjRjMzVhNTI4Zjg2NyIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiOTFjYzI3MDVlMGNmNTg4NDRjYjExNjczNDVmZGQxYjg4YzQxMDkxNWRkNWUyNmRmMGMyNzU2MTJkMzA1NmRiYyIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjIsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiOTUwMTUwNzBhODI1N2QxMTJlNWY2ZWEwZTViNjNlNDNmZjA1OWZlOWEzMTM5MGU1NmU5MTY1OTQ4MjUxNjcyOCJ9"
+        },
+        {
+          "resource": "repo://spook-ar.html#L9-L20",
+          "version": "repo-lines-v1:sha256:587db39319f930ca068abdd94d4e5b469be004caca259c09444b68464b1c9806:eyJzZWxlY3RlZExpbmVDb3VudCI6MTIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjZkZDU3OTljMzQ1N2I2NGQ5MzBkNzQ4MDA5ZDBlMDc2MTQ4ZWQwOWE1ZWI1ZWU0M2E2MjZlNmI5MTk1N2Y2MDgiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijk4NGNlMGNkOGUwMTQyOGViMmYzOWRhZmE0ZGZkNjU4ZDQzNDgwNjA4YjM3NTVlMTU2N2NjYjFkZDQ4OTRiMzciLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImZkNzlhNmI3OTk1MTJhZDVmZmYyZThhZGU4OGZjODIyMWFmZDE2ZGUwZWU1NWJiMTUwOTNhNzU5MGNmMGJhYjYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjQ0Y2FhZTNkZWUyOTgxZmE3NjQ4ZmQyNjZlZTdhMjNiMTkwZTZmMzlmY2FjNzlhMDIyOGY3ZDIzMmZiYmYyZjYifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_87a8811f6ef44a2abdfc54004345c74a",
+      "statement": "Camera access is required for the AR experience, but the app provides no application-specific permission-status handling or recovery UI; its splash instructions state the requirement and the scene delegates webcam startup to AR.js/browser behavior.",
+      "evidence": [
+        {
+          "resource": "repo://index.html#L21-L27",
+          "version": "repo-lines-v1:sha256:869c1c126ac8e0e6d39a93abc0ce7d6bb7a967f28b13ffd87e13380a90e8e421:eyJzZWxlY3RlZExpbmVDb3VudCI6NywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiZjA1Yzc4MjI5MzE4NmEzNGJmM2Q5ZTkwNzZiZDRjMmUwNzQ5ZDdjOGRlNGFjNzY0NzkzZmU3NzYxMWMyZmU0NCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNmEzZmZiNTk1Yzk3YjBjMDY1YjFkODdlY2QzY2FlMDliOWEzMTg3MmRhNmY5ODJiMzI0ZmVmNzE5MGE5OTJlOCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMDQ3NDJjMDg5NDczYTliNDY4YWYzMzY4YWMzMTUzM2UzYTRjYWI3MTcyMmMyMmJlN2NiOWI0OGVhMmIzYWNmMSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZjc4NmYzOGM2NTRlYjRiOWE2ZmFiM2NmOTU1YWZhZDc4OWE0YzU5NDg2Y2M2MWQ0ZTlhYjYzZWVkZGM5ZTcxNCJ9"
+        },
+        {
+          "resource": "repo://readme.md#L9-L16",
+          "version": "repo-lines-v1:sha256:c4b9d3a404ec87fd8f0650f94988c2f2ee5165b1aa5a87ecff024de0d2729cb3:eyJzZWxlY3RlZExpbmVDb3VudCI6OCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMTFmZGU2YmUwMDAwMzc2MzNmMDhmZGVhMDQ0MDIwZWNlNjExNGQ4MjA5MzJkMTgwZGI1ODBlOTliZmNmOWM0MiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiYTdjNjk2MzY1MzFlMTY3YmFjNzRjMDg5ZmJjMDhjMjAyZWIxODI4NmZlYzY3Mjg5YTM3YmMyZDM5YThlZmZiZSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMTVlMzc1MjU4NmIxNjEzYTRkNTBhMDZiZTc3Y2U4MGE1OTY5M2JkMGI3MjdkOGQ1YTc2MTJlNjg2OThjMGJlZSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiMjY5OTQ3NDY0MzE4OTNhMWFmYzQ3NzVlMDQyY2QxNmZmMTg0NWQzNjE3MWZmYjM3YjIyZjg5MTk0YmFkZDA3ZCJ9"
+        },
+        {
+          "resource": "repo://spook-ar.html#L19-L20",
+          "version": "repo-lines-v1:sha256:662f8dc3d089c4661c8443924cc6565fb87393a4f79ba5cc6f3f519734c73dcb:eyJzZWxlY3RlZExpbmVDb3VudCI6MiwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMmU5NGExNWMxY2NiOWFkMTg4YTFkZTdmNmU3YWUzZGVmODE4Zjk3MDllMjZjNjkyZjZjOWFkNjZlMTkzMmRmNyIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiOTg0Y2UwY2Q4ZTAxNDI4ZWIyZjM5ZGFmYTRkZmQ2NThkNDM0ODA2MDhiMzc1NWUxNTY3Y2NiMWRkNDg5NGIzNyIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiNTkxNTZlNmE5YmRjYTgwZTg5NzQwNjBmOWY3Yzg3M2E0OGNlZWIwMjI0NThiMWMwNmNkNTYxZjFjNjhiOGJmZCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNDRjYWFlM2RlZTI5ODFmYTc2NDhmZDI2NmVlN2EyM2IxOTBlNmYzOWZjYWM3OWEwMjI4ZjdkMjMyZmJiZjJmNiJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_cfb3ffac66cb43479f12bafb94e7c742",
+      "statement": "The A-Frame scene contains seven local looping MP4 assets and explicitly maps barcode values 6, 7, 8, 10, 11, 12, and 13 to their corresponding video planes; each marker's video reference connects its asset to the rendered `<a-video>`.",
+      "evidence": [
+        {
+          "resource": "repo://spook-ar.html#L21-L65",
+          "version": "repo-lines-v1:sha256:7bf15537f80c737b2c1fb5af066127d50063c8247246221a0b46ab5b5a28b62f:eyJzZWxlY3RlZExpbmVDb3VudCI6NDUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImM3ZjY2OTBlMTc3NmEyYzdhNjlmNTI2ODdmZjFhYmI2ZGZhMDdiODBlNTdlZmM4ZThmYTM2MzFmMzRmYTlkMzMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImEwNDU4NWIwNjBhMGU5NjcyNDgwY2FmMjA1MTZlNDE1NDIxY2ViOTA2MzAyYmZjMTc5NmZmNWIzOWMyNDhhZWMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImM3ZDJmYmU0MmEyOTBkOWE4MmJmMWQwZmY2OTIyOTI0NDEwN2YzMmE2Y2EwMGNhMjlhZjE3NTZjMjhiOTQyMGMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImU5YjhlMzU5M2M2MTg3ODRkNTQyNTYyZjlhYTA2NTcwNjNiYmMzZTU5MzE3MWNlYWQ5OGI3NDliZWYxMTA3ZDAifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_53a8b1d2b7e947b18e0c3b2e4afaa40b",
+      "statement": "The scene-wide barcode family is a compatibility invariant for physical scan targets: the README says the project uses `4x4_BCH_13_5_5` and that different barcode types must not be mixed on one page.",
+      "evidence": [
+        {
+          "resource": "repo://readme.md#L55-L68",
+          "version": "repo-lines-v1:sha256:3166995a112322d64dba4d5cbf0a26a7fc18d4fc96ce729e8d5c30cdf465d624:eyJzZWxlY3RlZExpbmVDb3VudCI6MTQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjllYjhkZmQxNjlmYzYyN2JiZTlmYjRlMTdkODUzMjU1ZDE0YzA5OTRhZGNlM2MxMmYwNmJiODNhOTM1YzZjNDkiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImExNzQyZTkzMmMzMmJmYTY4ZWEzNjkwMzRiNjgzOTI3N2UwYWI4ZjJmMjVkYjFmODI3MTA0NzVkNDAzMzEzZGQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjNkZmZiZGMzYjEyODk3YmViOGEyOGFiNzYzMjEyNjI1ZDEwZGVkYmRjNTg4OGEyOWRmNjE5OTMyYjliMjg5MjEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImQzOWEwYjRlNzJlY2RlMTQ5ZWVlNTcyZTdlNDhmMjQ0NDdjZmFiYTUxMDJlZGMxYzY3MThmYzI0YTcyZGMzYWUifQ"
+        },
+        {
+          "resource": "repo://spook-ar.html#L19-L20",
+          "version": "repo-lines-v1:sha256:662f8dc3d089c4661c8443924cc6565fb87393a4f79ba5cc6f3f519734c73dcb:eyJzZWxlY3RlZExpbmVDb3VudCI6MiwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMmU5NGExNWMxY2NiOWFkMTg4YTFkZTdmNmU3YWUzZGVmODE4Zjk3MDllMjZjNjkyZjZjOWFkNjZlMTkzMmRmNyIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiOTg0Y2UwY2Q4ZTAxNDI4ZWIyZjM5ZGFmYTRkZmQ2NThkNDM0ODA2MDhiMzc1NWUxNTY3Y2NiMWRkNDg5NGIzNyIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiNTkxNTZlNmE5YmRjYTgwZTg5NzQwNjBmOWY3Yzg3M2E0OGNlZWIwMjI0NThiMWMwNmNkNTYxZjFjNjhiOGJmZCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNDRjYWFlM2RlZTI5ODFmYTc2NDhmZDI2NmVlN2EyM2IxOTBlNmYzOWZjYWM3OWEwMjI4ZjdkMjMyZmJiZjJmNiJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_3aedcd4ab51e47a6b00a4c966ba5ff0d",
+      "statement": "`marker-video-controls` resolves the configured video selector and an `a-video` child during initialization; if either is absent, it logs an error and returns without installing click or marker-event handlers.",
+      "evidence": [
+        {
+          "resource": "repo://scripts/marker-video-controls.js#L3-L28",
+          "version": "repo-lines-v1:sha256:db31e18da3422265ace723a40d9d89e0462bc512d0f649e081b629a8cbe059a4:eyJzZWxlY3RlZExpbmVDb3VudCI6MjYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjcwMjVmMDNjY2YyNTJmM2I4YThkMmI5YzQ3YWI4YWE0MjViZWYzMTM2MzVhOTE3ZTY5MmFiNmMzZmU2MTU2NTAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImU2YjA0NDkxNDY5NzIyZTgzNjNhOTRlNDA0NDUzOGUwMTNhMmEyMTdlMzZiMWU1NjhiYTYwYWNiN2I0YzhmMmUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjoyLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjNlOTc2MWU5NGE0MzRmNTk1YmNlMmQxMzhjMzAxMGJlMWU0Yzc3OGRiZDkzMDhmMzcyYzFiNzI4NWY0ZmVjOWIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjEzMWZkOThkYjBmMmE2ZTJkMmJkNjE0MjE0MTAyYzRjZDc0OTU5ZGJmNDc1ZDViZGRkNGQ1NjA4ODdmZWY3YTcifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_aa9a6498b50249f4837fbb440c7acca5",
+      "statement": "For an initialized marker, `markerFound` plays its video only when `autoplay` is true, while `markerLost` always pauses it; all currently configured markers set autoplay true and enable marker events.",
+      "evidence": [
+        {
+          "resource": "repo://scripts/marker-video-controls.js#L49-L62",
+          "version": "repo-lines-v1:sha256:98bfc5c7dda221424cb55d110e0bc115d422726d53aa5f606a7196b6d97f0acd:eyJzZWxlY3RlZExpbmVDb3VudCI6MTQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImYzNzk1OGE3M2YzMGQ5NzRiYjI2NWEyNDBmZjZkNjUwYmNmNzQ1ODMwYzllNDM1MjAwMjU0NTg3Y2YwZWUwYzIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjU5YzEzNTkwNjY1NjMyM2QxYzVlYTQxNjU0ZWU2NmFmYjU4NWFjZGNmYWVhY2ExMjFkNWUzMGJmMTkzZWVkZDciLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImFjY2M2YzU1MTc0OTA4MmNiM2VkNDFhODY4MDk0MDAzMGVhMDM3YTRjY2MxOGQ1NjVjZWZmOTIyOTA5NDMwMjQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjoyLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjliOGQwOWYwNmUwNDNjNWZjNjE5YTdjOGJlNzhmNTM1MzlkZWI4NDkxNmMyYjZhZmQwZGIxZTZlZmJlYjI4MGIifQ"
+        },
+        {
+          "resource": "repo://spook-ar.html#L32-L65",
+          "version": "repo-lines-v1:sha256:1012e221826852894550d54a4bc255dc506e53ed5a47adcdbd7bded7a7112d9c:eyJzZWxlY3RlZExpbmVDb3VudCI6MzQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjFiMTI1MGU2ZDkyYTZlZTFlZTJlNzc1YjlhNzAzZjZmMzU3MTFlOWE5M2UyY2RjNzU2NWZlYTlhOTFlMzdiODMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImEwNDU4NWIwNjBhMGU5NjcyNDgwY2FmMjA1MTZlNDE1NDIxY2ViOTA2MzAyYmZjMTc5NmZmNWIzOWMyNDhhZWMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjE0MDA5ZjU1MzIzYzU2YzhkMmZkMTAxZjQzMmJkYjM4ZDEyMTRhYjgzNjViZTcxNDM5YTkzMjQxMmIxNWE2MzgiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImU5YjhlMzU5M2M2MTg3ODRkNTQyNTYyZjlhYTA2NTcwNjNiYmMzZTU5MzE3MWNlYWQ5OGI3NDliZWYxMTA3ZDAifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_60d8bf744066417ab7f42e80c299c81a",
+      "statement": "The custom component toggles video playback on click only when the event's intersected element is the marker's `a-video` child or the marker itself and the marker's `visible` attribute is not boolean false.",
+      "evidence": [
+        {
+          "resource": "repo://scripts/marker-video-controls.js#L30-L47",
+          "version": "repo-lines-v1:sha256:7b995788e98c2838997424b088d535d72bb1a81145b9769cd46523d29fdffa51:eyJzZWxlY3RlZExpbmVDb3VudCI6MTgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQzZDVjNjQ4YzVmMDczZjdmMjAwMDE0YjBlOTAyZDY4OTBkMGE4NDFjODNlMDgxNjFhMzI1MmY2NDllMjkxZGIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjU5YzEzNTkwNjY1NjMyM2QxYzVlYTQxNjU0ZWU2NmFmYjU4NWFjZGNmYWVhY2ExMjFkNWUzMGJmMTkzZWVkZDciLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjYzMzhmZDI4MWYxMDY0NzIxODQzZDM0ZjA3OGNjYzJjNGNjNjk4M2U1YzgyYmQ4MmJlZjk5MjYxZWQwNmNmMjAiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImYzODAwNGQ5YWEwYjI3OTczMzliOWIxMTY0MTM5ZjE3YjM4OGUxNjFlMzJmZGUyZTA2NmI0MzA0ODVmZmZhZDUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_3f2fcd10bcde4d4ebc285c8ea1171945",
+      "statement": "Video playback is not explicitly rewound on marker loss and the component does not handle rejected `play()` promises; source videos loop, so restart/resume behavior otherwise follows browser media behavior.",
+      "evidence": [
+        {
+          "resource": "repo://scripts/marker-video-controls.js#L41-L61",
+          "version": "repo-lines-v1:sha256:937e6b90c9ab0c0d221798be478bce62b702851ac6a01648aa88883f43b35edd:eyJzZWxlY3RlZExpbmVDb3VudCI6MjEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjE2NDY4ZGVhMDc0NTdiNWY1YTJmMmUxZDZhMDI0OTFiYzE0NzJkNjNmNzkyNjQ4MWUxMTNhMzVmYTNmNjZhOTAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImM2MjllYjYxMzVjNmI5YTQwZmFkODUwOTQwMjVjNDBmYmY5OGQwODk1ZThiNzE5NDU3NDc1MTc2YmI0NDQ0ZGMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImJjNGNkZmY4MGI2OTk2ZjFiYjg4NmVlZDJkYjdmZGM1NjUzMWEyMzQ2NjRmNzE2OTBjM2QxNjExZGFhZjA3ZjciLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjRmZDAyYWRlOWRlMGE3Y2Y2NGFhMDYxZTI2NGI2MzUyYWM4NTkyNGQxZjVlMWEwZjM0MGRjZjBlNmEwNTExN2EifQ"
+        },
+        {
+          "resource": "repo://spook-ar.html#L21-L30",
+          "version": "repo-lines-v1:sha256:f890fb5a7917bb0057782e5ca87e91b79e4567370a00b5d36e45e068e58c73a2:eyJzZWxlY3RlZExpbmVDb3VudCI6MTAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImM3ZjY2OTBlMTc3NmEyYzdhNjlmNTI2ODdmZjFhYmI2ZGZhMDdiODBlNTdlZmM4ZThmYTM2MzFmMzRmYTlkMzMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImEwMjZkMGVkNTdhYmIxYTkxMDU0ZTBhNjUxM2EwNDczNjI1ZTAxZWRjMDQ0ZDUwYjZkYTBjNDJkNWFlN2IwOTUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImM3ZDJmYmU0MmEyOTBkOWE4MmJmMWQwZmY2OTIyOTI0NDEwN2YzMmE2Y2EwMGNhMjlhZjE3NTZjMjhiOTQyMGMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImE3ZTUzNTU2MmRhNGYxOWFmMzdkYTdkODlkOWFiMzM0YWViNzdjNzQ5ZjY4MmM1MzRkODFkY2I0OTEyNTFlMjEifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_ca3a05106a5b4b019b45941024f40092",
+      "statement": "The architecture separates responsibilities: the scene markup owns barcode, asset, and video-plane configuration; AR.js/A-Frame provide tracking, scene, and event infrastructure; the custom component maps those events to media controls; CSS styles the user interface; browser permission and media execution remain browser responsibilities.",
+      "evidence": [
+        {
+          "resource": "repo://scripts/marker-video-controls.js#L3-L63",
+          "version": "repo-lines-v1:sha256:c84fba156d747b08272158334d888c4633101742ae4c1cf2504dea6338d49937:eyJzZWxlY3RlZExpbmVDb3VudCI6NjEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjcwMjVmMDNjY2YyNTJmM2I4YThkMmI5YzQ3YWI4YWE0MjViZWYzMTM2MzVhOTE3ZTY5MmFiNmMzZmU2MTU2NTAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQ4OTNmNDBlMzc4MWViODk2YzgyZDA0NmEwODA2N2ExMWUzNWNkZjJmMWRmYWYyNmZlYTkwYjhkYjY2NzY0MTMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjoyLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjNlOTc2MWU5NGE0MzRmNTk1YmNlMmQxMzhjMzAxMGJlMWU0Yzc3OGRiZDkzMDhmMzcyYzFiNzI4NWY0ZmVjOWIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjoxLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImY2ZjViNDBiMTU4NDU3ZDE3ODY0ZjIxNzkwNzg2ZGQ1YTJlY2RiNjRiNjZhNjUxZjc4OGQ0ZTI1Y2QzMzAzZDIifQ"
+        },
+        {
+          "resource": "repo://spook-ar.html#L21-L69",
+          "version": "repo-lines-v1:sha256:d9349caf90924b000799ef87cee6ab5734cb23d7bc3616487cc000fe76689ecc:eyJzZWxlY3RlZExpbmVDb3VudCI6NDksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImM3ZjY2OTBlMTc3NmEyYzdhNjlmNTI2ODdmZjFhYmI2ZGZhMDdiODBlNTdlZmM4ZThmYTM2MzFmMzRmYTlkMzMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjY3Yjc1NmIyNjc3NmZkYzAyYjFlN2FlNTM5YWM0YTQzOGI0OTZjNDE2NDQzNmExZjRhZjY0YzM1YTUyOGY4NjciLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImM3ZDJmYmU0MmEyOTBkOWE4MmJmMWQwZmY2OTIyOTI0NDEwN2YzMmE2Y2EwMGNhMjlhZjE3NTZjMjhiOTQyMGMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjoyLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijk1MDE1MDcwYTgyNTdkMTEyZTVmNmVhMGU1YjYzZTQzZmYwNTlmZTlhMzEzOTBlNTZlOTE2NTk0ODI1MTY3MjgifQ"
+        },
+        {
+          "resource": "repo://spook-ar.html#L9-L20",
+          "version": "repo-lines-v1:sha256:587db39319f930ca068abdd94d4e5b469be004caca259c09444b68464b1c9806:eyJzZWxlY3RlZExpbmVDb3VudCI6MTIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjZkZDU3OTljMzQ1N2I2NGQ5MzBkNzQ4MDA5ZDBlMDc2MTQ4ZWQwOWE1ZWI1ZWU0M2E2MjZlNmI5MTk1N2Y2MDgiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijk4NGNlMGNkOGUwMTQyOGViMmYzOWRhZmE0ZGZkNjU4ZDQzNDgwNjA4YjM3NTVlMTU2N2NjYjFkZDQ4OTRiMzciLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImZkNzlhNmI3OTk1MTJhZDVmZmYyZThhZGU4OGZjODIyMWFmZDE2ZGUwZWU1NWJiMTUwOTNhNzU5MGNmMGJhYjYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjQ0Y2FhZTNkZWUyOTgxZmE3NjQ4ZmQyNjZlZTdhMjNiMTkwZTZmMzlmY2FjNzlhMDIyOGY3ZDIzMmZiYmYyZjYifQ"
+        },
+        {
+          "resource": "repo://styles.css#L12-L78",
+          "version": "repo-lines-v1:sha256:4c6f0b6b43f5daf4b014bb278364795253a482e7ff91ae8fb7aab3fe98ca0de6:eyJzZWxlY3RlZExpbmVDb3VudCI6NjcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjRhYzVhMjY0MDA1NzU2Yzc2MDFiMTUzNmQwMmU5NDg3OTY1ZGJiZjg2NzA3N2RlNDNmZDI3NDM5ZDRkNTc1NDYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImQzYmJhNjMyODBkYWI4ZTNjYmI3ODM4ZjVmODdiMjYwODY1MzY0NTg2OWVlOGJiMTQ4ZDRhNjQyNWNmMWUyODgiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImU4YjQ5NGRmZDdhNzg3ZjkxNzMxNWI3N2Y0ZTczMTg0ZjI2NDliYzZhNTc0NmFiOTcxOTI1YzA4MzljNGY5ZjcifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_c2fef54e66304e998cc5c300bbfabf5b",
+      "statement": "The README describes deployment as static hosting of the HTML, CSS, scripts, and on-site resources; the AR framework scripts are instead referenced by external URLs in the scanner page.",
+      "evidence": [
+        {
+          "resource": "repo://readme.md#L75-L78",
+          "version": "repo-lines-v1:sha256:095d1614984aa4d0db45764047f180965cf73428e224da050a757df11e1142fd:eyJzZWxlY3RlZExpbmVDb3VudCI6NCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNDAyZTJiMzIyZGYxOTNjMTM3ZmU1MGVkNDQ2ZWM3NDZkZWFjZjU4OGM5N2IzNzQwMmRhYTM2MmE4YjNiOWVkNSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMDFiYTQ3MTljODBiNmZlOTExYjA5MWE3YzA1MTI0YjY0ZWVlY2U5NjRlMDljMDU4ZWY4Zjk4MDVkYWNhNTQ2YiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMTc4ODEwYmZlZjlhODAwYTA0MmM5NzBhZTEwMjcxNzhhNzJkYWM4Yjc4ZjFmOTgxNTUzYzUzMGY2YzhkYmE4ZCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNzcwMzYyZDk2YjYyNWYzN2Y0MDc4ZGNhZDNkZWRmMmJhNjJiMmYyOTJiODUxNDY3ODQ2NDg3MWJjOTQ0MDc0YSJ9"
+        },
+        {
+          "resource": "repo://spook-ar.html#L9-L11",
+          "version": "repo-lines-v1:sha256:8725943379bfe488b087cf5e365d1ce152aa95bf07c5e7e7d64f5783db66a230:eyJzZWxlY3RlZExpbmVDb3VudCI6MywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNmRkNTc5OWMzNDU3YjY0ZDkzMGQ3NDgwMDlkMGUwNzYxNDhlZDA5YTVlYjVlZTQzYTYyNmU2YjkxOTU3ZjYwOCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiZjllY2FkYjM4ZGMwNmYxOTMwNTAzMzlmNTQ3ZWVlNmU4MDI3NDVhODhmYmI4YzU0YzE4NTg3ZTdkZjUxYTAyZCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZmQ3OWE2Yjc5OTUxMmFkNWZmZjJlOGFkZTg4ZmM4MjIxYWZkMTZkZTBlZTU1YmIxNTA5M2E3NTkwY2YwYmFiNiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiYWYwOTEwM2Y1YWJiNGMzOWEzOTkzMWFiNzk2OTUwZTBjMDAxMmE5MzAwODhkOWEwNTk0NTQxYTYxMGZlYWQxMSJ9"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.4.3",
+    "at": "2026-10-12T04:33:48.846Z"
+  }
+}

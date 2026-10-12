@@ -1,0 +1,173 @@
+{
+  "schemaVersion": 1,
+  "runId": "869d29eb-d0f1-4727-993e-7e733278141a",
+  "mode": "init",
+  "phase": "generating",
+  "startedAt": "2026-10-12T04:33:48.846Z",
+  "language": "en",
+  "languageChanged": false,
+  "requiredRewritePages": [],
+  "initialPages": [],
+  "sourceFingerprint": "sha256:4094bd31edc0f5de8833aad10943ec6fd8e212cab8a38e58e6ee4be12a26b71f",
+  "actor": {
+    "producerActor": "openwiki/0.4.3",
+    "metadataModel": "chatgpt-6-luna"
+  },
+  "previousLastUpdate": null,
+  "beforeContentSnapshot": "ffa63583dfa6706b87d284b86b0d693a161e4840aad2c5cf6b5d27c3b9621f7d",
+  "preparedWiki": {
+    "generatedProvenance": []
+  },
+  "plan": {
+    "pages": [
+      {
+        "id": "17d6fea0-b5a8-4d47-8d08-f5471a1cf89f",
+        "path": "/openwiki/architecture/ar-runtime.md",
+        "title": "AR runtime and user journey",
+        "purpose": "Explain the browser entrypoints and lifecycle from splash/start through camera-backed marker scanning, video presentation, and exit, including ownership boundaries among HTML, CSS, the A-Frame scene, and the custom component.",
+        "seedPaths": [
+          "index.html",
+          "readme.md",
+          "scripts/marker-video-controls.js",
+          "spook-ar.html",
+          "styles.css"
+        ],
+        "relatedPages": [
+          "/openwiki/concepts/marker-video-catalog.md",
+          "/openwiki/integrations/browser-ar-stack.md",
+          "/openwiki/testing/manual-validation.md",
+          "/openwiki/workflows/add-marker-experience.md"
+        ],
+        "instructions": [],
+        "status": "complete"
+      },
+      {
+        "id": "4bd621f2-66c5-4428-ad77-2a56b89037ce",
+        "path": "/openwiki/concepts/marker-video-catalog.md",
+        "title": "Marker and video content model",
+        "purpose": "Document how barcode values, A-Frame marker entities, video asset IDs and local MP4 paths, printed targets, and scene geometry fit together, with the consistency constraints to preserve when editing content.",
+        "seedPaths": [
+          "assets/",
+          "print/",
+          "readme.md",
+          "spook-ar.html"
+        ],
+        "relatedPages": [
+          "/openwiki/architecture/ar-runtime.md",
+          "/openwiki/integrations/browser-ar-stack.md",
+          "/openwiki/testing/manual-validation.md",
+          "/openwiki/workflows/add-marker-experience.md"
+        ],
+        "instructions": [],
+        "status": "pending"
+      },
+      {
+        "id": "9b7c638a-010c-44df-9eb3-daac295bae2e",
+        "path": "/openwiki/integrations/browser-ar-stack.md",
+        "title": "Browser, A-Frame, and AR.js integration",
+        "purpose": "Describe the external runtime stack and its contract with this app: CDN-loaded A-Frame and AR.js, barcode detection settings, webcam permission and browser constraints, and the component's event/selector integration points.",
+        "seedPaths": [
+          "readme.md",
+          "scripts/marker-video-controls.js",
+          "spook-ar.html"
+        ],
+        "relatedPages": [
+          "/openwiki/architecture/ar-runtime.md",
+          "/openwiki/concepts/marker-video-catalog.md",
+          "/openwiki/testing/manual-validation.md"
+        ],
+        "instructions": [],
+        "status": "pending"
+      },
+      {
+        "id": "cece4bfb-07e4-449d-b9e9-2a3f127712cc",
+        "path": "/openwiki/operations/static-deployment.md",
+        "title": "Static hosting and deployment",
+        "purpose": "Explain the no-build static deployment model, required repository-relative resources, published app location, and operational implications of loading dependencies from remote CDNs while keeping media assets local.",
+        "seedPaths": [
+          ".github/workflows/openwiki-update.yml",
+          "assets/",
+          "index.html",
+          "readme.md",
+          "scripts/marker-video-controls.js",
+          "spook-ar.html"
+        ],
+        "relatedPages": [
+          "/openwiki/architecture/ar-runtime.md",
+          "/openwiki/integrations/browser-ar-stack.md",
+          "/openwiki/testing/manual-validation.md"
+        ],
+        "instructions": [],
+        "status": "pending"
+      },
+      {
+        "id": "d833a2c8-1279-42fa-bff3-991cdae56e6e",
+        "path": "/openwiki/testing/manual-validation.md",
+        "title": "Manual validation and test boundaries",
+        "purpose": "Record that the repository has no automated test suite or build manifest and provide focused browser smoke-checks for navigation, camera permission, marker-to-video mapping, playback lifecycle, printed targets, and failure diagnosis.",
+        "seedPaths": [
+          "index.html",
+          "print/",
+          "readme.md",
+          "scripts/marker-video-controls.js",
+          "spook-ar.html"
+        ],
+        "relatedPages": [
+          "/openwiki/architecture/ar-runtime.md",
+          "/openwiki/concepts/marker-video-catalog.md",
+          "/openwiki/integrations/browser-ar-stack.md",
+          "/openwiki/operations/static-deployment.md",
+          "/openwiki/workflows/add-marker-experience.md"
+        ],
+        "instructions": [
+          "Treat source files as authoritative and choose the narrowest practical validation for the change; preserve complete failure output."
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "d8e12522-8437-42b1-85c0-28c03d8e28f7",
+        "path": "/openwiki/workflows/add-marker-experience.md",
+        "title": "Add or change a marker experience",
+        "purpose": "Give the cross-file procedure for safely introducing or changing a marker-triggered video, covering local asset setup, unique IDs and barcode values, scene entity linkage, printed target synchronization, and practical verification.",
+        "seedPaths": [
+          "assets/",
+          "print/",
+          "readme.md",
+          "spook-ar.html"
+        ],
+        "relatedPages": [
+          "/openwiki/architecture/ar-runtime.md",
+          "/openwiki/concepts/marker-video-catalog.md",
+          "/openwiki/integrations/browser-ar-stack.md",
+          "/openwiki/testing/manual-validation.md"
+        ],
+        "instructions": [],
+        "status": "pending"
+      },
+      {
+        "id": "a702aef8-8157-490f-a05c-601feebb1b72",
+        "path": "/openwiki/quickstart.md",
+        "title": "Quickstart and task map",
+        "purpose": "Orient contributors to this static browser-based AR app and route common changes—runtime flow, marker/video mapping, external dependencies, deployment, and validation—to the focused wiki pages.",
+        "seedPaths": [
+          "index.html",
+          "print/",
+          "readme.md",
+          "scripts/marker-video-controls.js",
+          "spook-ar.html"
+        ],
+        "relatedPages": [
+          "/openwiki/architecture/ar-runtime.md",
+          "/openwiki/concepts/marker-video-catalog.md",
+          "/openwiki/integrations/browser-ar-stack.md",
+          "/openwiki/operations/static-deployment.md",
+          "/openwiki/testing/manual-validation.md",
+          "/openwiki/workflows/add-marker-experience.md"
+        ],
+        "instructions": [],
+        "status": "pending"
+      }
+    ],
+    "deletePages": []
+  }
+}
